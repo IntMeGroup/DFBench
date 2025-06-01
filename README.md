@@ -12,3 +12,8 @@
 </a>
 
 </div>
+<p align="center">
+  <img width="1000" alt="teaser" src="https://github.com/user-attachments/assets/f0b63cd9-dda3-4437-84ad-a64c2109a806" />
+</p>
+
+---
