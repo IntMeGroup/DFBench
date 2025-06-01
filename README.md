@@ -26,3 +26,9 @@ Download with CLI:
 ```bash
 huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DFBench
 ```
+
+<p align="center">
+  <img width="1000" alt="example" src="https://github.com/user-attachments/assets/5f02efc7-ab54-458d-8c7a-45c772fe5c26" />
+</p>
+
+
