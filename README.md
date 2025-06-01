@@ -17,3 +17,12 @@
 </p>
 
 ---
+## 🤗 AIGVE-60K Download
+
+[![🤗 Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-green)](https://huggingface.co/datasets/IntMeGroup/MMDB)
+
+Download with CLI:
+
+```bash
+huggingface-cli download anonymousdb/AIGVE-60K --repo-type dataset --local-dir ./DFBench
+```
