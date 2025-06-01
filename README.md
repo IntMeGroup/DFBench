@@ -7,7 +7,7 @@
 <div align="center">
 
 
-<a href="https://huggingface.co/datasets/IntMeGroup/MMDB">
+<a href="https://huggingface.co/datasets/IntMeGroup/DFBench/tree/main">
    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-green" alt="Hugging Face Dataset Badge"/>
 </a>
 
@@ -19,10 +19,10 @@
 ---
 ## 🤗 AIGVE-60K Download
 
-[![🤗 Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-green)](https://huggingface.co/datasets/IntMeGroup/MMDB)
+[![🤗 Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-green)](https://huggingface.co/datasets/IntMeGroup/DFBench/tree/main)
 
 Download with CLI:
 
 ```bash
-huggingface-cli download anonymousdb/AIGVE-60K --repo-type dataset --local-dir ./DFBench
+huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DFBench
 ```
