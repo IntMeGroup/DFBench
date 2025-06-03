@@ -142,3 +142,62 @@ sh merge_lora.sh
 ```bash
 python evaluate_logit.py --model_path ./output_ckpt/your_weights_merged
 ```
+
+---
+## 🔧 Preparation for InternVL2.5
+
+### 📁 Prepare dataset
+
+```bash
+huggingface-cli download IntMeGroup/DFBench img_train.json --repo-type dataset --local-dir ./qwen2.5/datasets
+huggingface-cli download IntMeGroup/DFBench img_test.json --repo-type dataset --local-dir ./qwen2.5/datasets
+```
+
+### 📦 Prepare model weights
+
+```bash
+huggingface-cli download OpenGVLab/InternVL2_5-8B --local_dir ./OpenGVLab/InternVL2_5-8B
+```
+
+## 🚀 Training for InternVL2.5
+
+```bash
+cd internvl2.5
+sh shell/train_deepfake.sh
+```
+
+## 🚀 Evaluation & Real/Fake Prediction for InternVL2.5
+
+```bash
+sh shell/eval_deepfake.sh
+```
+
+---
+## 🔧 Preparation for InternVL3
+
+### 📁 Prepare dataset
+
+```bash
+huggingface-cli download IntMeGroup/DFBench img_train.json --repo-type dataset --local-dir ./qwen2.5/datasets
+huggingface-cli download IntMeGroup/DFBench img_test.json --repo-type dataset --local-dir ./qwen2.5/datasets
+```
+
+### 📦 Prepare model weights
+
+```bash
+huggingface-cli download OpenGVLab/InternVL3-9B --local_dir ./OpenGVLab/InternVL3-9B
+```
+
+## 🚀 Training for InternVL3
+
+```bash
+cd internvl3
+sh shell/train_deepfake.sh
+```
+
+## 🚀 Evaluation & Real/Fake Prediction for InternVL3
+
+```bash
+sh shell/eval_deepfake.sh
+```
+
