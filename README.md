@@ -156,8 +156,10 @@ python evaluate_logit.py --model_path ./output_ckpt/your_weights_merged
 ### 📁 Prepare dataset
 
 ```bash
-huggingface-cli download IntMeGroup/DFBench img_train.json --repo-type dataset --local-dir ./qwen2.5/datasets
-huggingface-cli download IntMeGroup/DFBench img_test.json --repo-type dataset --local-dir ./qwen2.5/datasets
+huggingface-cli download IntMeGroup/DFBench img_train.jsonl --repo-type dataset --local-dir ./internvl2.5/data
+huggingface-cli download IntMeGroup/DFBench img_test.jsonl --repo-type dataset --local-dir ./internvl2.5/data
+huggingface-cli download IntMeGroup/DFBench img_train.jsonl --repo-type dataset --local-dir ./internvl3/data
+huggingface-cli download IntMeGroup/DFBench img_test.jsonl --repo-type dataset --local-dir ./internvl3/data
 ```
 
 ### 📦 Prepare model weights
