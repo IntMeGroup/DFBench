@@ -212,6 +212,12 @@ sh shell/train_deepfake.sh
 sh shell/eval_deepfake.sh
 ```
 ---
+# 📈 Calculate the final logit results and accuracy
+
+```bash
+python logit_calculation.py
+python process_results.py
+```
 
 # Zeo-Shot Model Comparison
 
