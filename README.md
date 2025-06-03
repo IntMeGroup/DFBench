@@ -46,14 +46,14 @@ huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DF
 Clone the repository:
 
 ```bash
-git clone https://github.com/IntMeGroup/LOVE.git
+git clone https://github.com/IntMeGroup/DFBench.git
 ```
 
 Create and activate a conda environment:
 
 ```bash
-conda create -n LOVE python=3.9 -y
-conda activate LOVE
+conda create -n DFBench python=3.9 -y
+conda activate DFBench
 ```
 
 Install dependencies:
@@ -79,63 +79,46 @@ python setup.py install
 
 ---
 
-## 🔧 Preparation
+## 🔧 Preparation for Qwen2.5-VL
 
 ### 📁 Prepare dataset
 
 ```bash
-huggingface-cli download anonymousdb/AIGVE-60K data.zip --repo-type dataset --local-dir ./
-unzip data.zip -d ./data
+huggingface-cli download IntMeGroup/DFBench img_train.json --repo-type dataset --local-dir ./qwen2.5/datasets
+huggingface-cli download IntMeGroup/DFBench img_test.json --repo-type dataset --local-dir ./qwen2.5/datasets
 ```
+
 ### 📦 Prepare model weights
 
 ```bash
-huggingface-cli download OpenGVLab/InternVL3-9B --local_dir OpenGVLab/InternVL3-9B
-huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth ./
+huggingface-cli download Qwen/Qwen2.5-VL-7B-Instruct --local_dir ./Qwen/Qwen2.5-VL-7B-Instruct
 ```
 
 ---
 
 
 
-## 🚀 Training
-
-
-### 📈 Stage 1: Text-based quality training
+## 🚀 Training for Qwen2.5-VL
 
 ```bash
-sh shell/st1_train.sh
-```
-
-### 🎨 Stage 2: Fine-tune vision encoder and LLM with LoRA
-
-```bash
-sh shell/st2_train.sh
-```
-
-### ❓ Question-Answering (QA) Training
-
-```bash
-sh shell/train_qa.sh
+cd qwen2.5
+sh train.sh
 ```
 
 ---
 
-## 🚀 Evaluation
+## 🚀 Evaluation & Real/Fake Prediction (with logit probabilities)
 
-### 📦 Download pretrained weights
+### 📦 Merge LoRA weights
+
+change merge_lora.sh line3 --adapters ./output_ckpt/your_weights
 
 ```bash
-huggingface-cli download anonymousdb/LOVE-Perception --local-dir ./weights/stage2/stage2_mos1
-huggingface-cli download anonymousdb/LOVE-Correspondence --local-dir ./weights/stage2/stage2_mos2
-huggingface-cli download anonymousdb/LOVE-QA --local-dir ./weights/qa
+sh merge_lora.sh 
 ```
 
 ### 📈 Evaluate perception & correspondence scores
 
-[![HF](https://img.shields.io/badge/%F0%9F%A4%97%20LOVE--Perception-orange)](https://huggingface.co/anonymousdb/LOVE-Perception)  
-[![HF](https://img.shields.io/badge/%F0%9F%A4%97%20LOVE--Correspondence-green)](https://huggingface.co/anonymousdb/LOVE-Correspondence)
-
 ```bash
-sh shell/eval_score.sh
+python evaluate_logit.py --model_path ./output_ckpt/your_weights_merged
 ```
