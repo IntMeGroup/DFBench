@@ -127,9 +127,6 @@ huggingface-cli download Qwen/Qwen2.5-VL-7B-Instruct --local_dir ./Qwen/Qwen2.5-
 cd qwen2.5
 sh train.sh
 ```
-
----
-
 ## 🚀 Evaluation & Real/Fake Prediction for Qwen2.5-VL
 
 ### 📦 Merge LoRA weights
@@ -166,7 +163,7 @@ huggingface-cli download IntMeGroup/DFBench img_test.json --repo-type dataset --
 huggingface-cli download OpenGVLab/InternVL2_5-8B --local_dir ./internvl25/OpenGVLab/InternVL2_5-8B
 huggingface-cli download OpenGVLab/InternVL3-9B --local_dir ./internvl3/OpenGVLab/InternVL3-9B
 ```
-
+---
 ## 🚀 Training for InternVL2.5
 
 ```bash
