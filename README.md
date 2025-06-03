@@ -15,9 +15,10 @@
 <p align="center">
   <img width="1000" alt="teaser" src="https://github.com/user-attachments/assets/f0b63cd9-dda3-4437-84ad-a64c2109a806" />
 </p>
+<h3>If you find our paper and code useful in your research, please consider giving a star :star: and citation :pencil:</h3>
 
 ---
-## 🤗 DFBench Database Download
+# 🤗 DFBench Database Download
 
 [![🤗 Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-green)](https://huggingface.co/datasets/IntMeGroup/DFBench/tree/main)
 
@@ -40,11 +41,7 @@ huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DF
   <img width="1000" alt="example" src="https://github.com/user-attachments/assets/5f02efc7-ab54-458d-8c7a-45c772fe5c26" />
 </p>
 
-# Zeo-Shot Model Comparison
 
-<p align="center">
-  <img width="1000" alt="example" src="https://github.com/user-attachments/assets/e9e42d42-ca0a-420c-a01d-3bacdb699a3b" />
-</p>
 
 ---
 
@@ -192,4 +189,9 @@ sh shell/train_deepfake.sh
 ```bash
 sh shell/eval_deepfake.sh
 ```
+---
+# Zeo-Shot Model Comparison
 
+<p align="center">
+  <img width="1000" alt="example" src="https://github.com/user-attachments/assets/e9e42d42-ca0a-420c-a01d-3bacdb699a3b" />
+</p>
