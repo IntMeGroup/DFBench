@@ -147,7 +147,7 @@ python evaluate_logit.py --model_path ./output_ckpt/your_weights_merged
 ```
 
 ---
-## 🔧 Preparation for InternVL2.5
+## 🔧 Preparation for InternVL2.5 & InternVL3
 <div align="center">
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/930e6814-8a9f-43e1-a284-118a5732daa4">
   <br>
@@ -163,7 +163,8 @@ huggingface-cli download IntMeGroup/DFBench img_test.json --repo-type dataset --
 ### 📦 Prepare model weights
 
 ```bash
-huggingface-cli download OpenGVLab/InternVL2_5-8B --local_dir ./OpenGVLab/InternVL2_5-8B
+huggingface-cli download OpenGVLab/InternVL2_5-8B --local_dir ./internvl25/OpenGVLab/InternVL2_5-8B
+huggingface-cli download OpenGVLab/InternVL3-9B --local_dir ./internvl3/OpenGVLab/InternVL3-9B
 ```
 
 ## 🚀 Training for InternVL2.5
@@ -181,19 +182,6 @@ sh shell/eval_deepfake.sh
 
 ---
 ## 🔧 Preparation for InternVL3
-
-### 📁 Prepare dataset
-
-```bash
-huggingface-cli download IntMeGroup/DFBench img_train.json --repo-type dataset --local-dir ./qwen2.5/datasets
-huggingface-cli download IntMeGroup/DFBench img_test.json --repo-type dataset --local-dir ./qwen2.5/datasets
-```
-
-### 📦 Prepare model weights
-
-```bash
-huggingface-cli download OpenGVLab/InternVL3-9B --local_dir ./OpenGVLab/InternVL3-9B
-```
 
 ## 🚀 Training for InternVL3
 
