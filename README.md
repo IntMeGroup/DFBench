@@ -107,7 +107,7 @@ sh train.sh
 
 ---
 
-## 🚀 Evaluation & Real/Fake Prediction (with logit probabilities)
+## 🚀 Evaluation & Real/Fake Prediction for Qwen2.5-VL
 
 ### 📦 Merge LoRA weights
 
