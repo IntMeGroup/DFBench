@@ -28,6 +28,8 @@ torchrun \
   --conv_style "internlm2-chat" \
   --output_dir ${OUTPUT_DIR} \
   --meta_path "data/deepfake.json"\
+  --output_file "${OUTPUT_DIR}/resultsintern3.csv"\
+  --metrics_file "${OUTPUT_DIR}/Acc_metrics.txt"\
   --overwrite_output_dir True \
   --force_image_size 448 \
   --max_dynamic_patch 6 \
