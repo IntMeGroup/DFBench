@@ -28,6 +28,11 @@ Download with huggingface-cli:
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
+*Windows Powershell*
+```bash
+$env:HF_ENDPOINT = "https://hf-mirror.com"
+```
+
 ```bash
 huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DFBench
 ```
