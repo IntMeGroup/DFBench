@@ -40,7 +40,7 @@ huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DF
   <img width="1000" alt="example" src="https://github.com/user-attachments/assets/5f02efc7-ab54-458d-8c7a-45c772fe5c26" />
 </p>
 
-
+---
 ## ⚙️ Installation
 
 Clone the repository:
@@ -81,7 +81,7 @@ python setup.py install
   <img width="1000" alt="example" src="https://github.com/user-attachments/assets/7136b1b0-db17-44a0-bf21-9cf409825b16" />
 </p>
 
-# The MoA-DF Method
+# 💡 The MoA-DF Method
 
 ---
 
