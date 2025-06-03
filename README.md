@@ -39,6 +39,11 @@ huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DF
 <p align="center">
   <img width="1000" alt="example" src="https://github.com/user-attachments/assets/5f02efc7-ab54-458d-8c7a-45c772fe5c26" />
 </p>
+# Zeo-Shot Model Comparison
+
+<p align="center">
+  <img width="1000" alt="example" src="https://github.com/user-attachments/assets/e9e42d42-ca0a-420c-a01d-3bacdb699a3b" />
+</p>
 
 ---
 ## ⚙️ Installation
