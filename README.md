@@ -41,3 +41,101 @@ huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DF
 </p>
 
 
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/IntMeGroup/LOVE.git
+```
+
+Create and activate a conda environment:
+
+```bash
+conda create -n LOVE python=3.9 -y
+conda activate LOVE
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Install `flash-attn==2.3.6` (pre-built):
+
+```bash
+pip install flash-attn==2.3.6 --no-build-isolation
+```
+
+Or compile from source:
+
+```bash
+git clone https://github.com/Dao-AILab/flash-attention.git
+cd flash-attention
+git checkout v2.3.6
+python setup.py install
+```
+
+---
+
+## 🔧 Preparation
+
+### 📁 Prepare dataset
+
+```bash
+huggingface-cli download anonymousdb/AIGVE-60K data.zip --repo-type dataset --local-dir ./
+unzip data.zip -d ./data
+```
+### 📦 Prepare model weights
+
+```bash
+huggingface-cli download OpenGVLab/InternVL3-9B --local_dir OpenGVLab/InternVL3-9B
+huggingface-cli download anonymousdb/LOVE-pretrain temporal.pth ./
+```
+
+---
+
+
+
+## 🚀 Training
+
+
+### 📈 Stage 1: Text-based quality training
+
+```bash
+sh shell/st1_train.sh
+```
+
+### 🎨 Stage 2: Fine-tune vision encoder and LLM with LoRA
+
+```bash
+sh shell/st2_train.sh
+```
+
+### ❓ Question-Answering (QA) Training
+
+```bash
+sh shell/train_qa.sh
+```
+
+---
+
+## 🚀 Evaluation
+
+### 📦 Download pretrained weights
+
+```bash
+huggingface-cli download anonymousdb/LOVE-Perception --local-dir ./weights/stage2/stage2_mos1
+huggingface-cli download anonymousdb/LOVE-Correspondence --local-dir ./weights/stage2/stage2_mos2
+huggingface-cli download anonymousdb/LOVE-QA --local-dir ./weights/qa
+```
+
+### 📈 Evaluate perception & correspondence scores
+
+[![HF](https://img.shields.io/badge/%F0%9F%A4%97%20LOVE--Perception-orange)](https://huggingface.co/anonymousdb/LOVE-Perception)  
+[![HF](https://img.shields.io/badge/%F0%9F%A4%97%20LOVE--Correspondence-green)](https://huggingface.co/anonymousdb/LOVE-Correspondence)
+
+```bash
+sh shell/eval_score.sh
+```
