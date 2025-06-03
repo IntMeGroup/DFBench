@@ -21,8 +21,6 @@
 
 [![🤗 Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-green)](https://huggingface.co/datasets/IntMeGroup/DFBench/tree/main)
 
-Download with huggingface-cli:
-
 *Linux*
 ```bash
 export HF_ENDPOINT=https://hf-mirror.com
@@ -33,6 +31,7 @@ export HF_ENDPOINT=https://hf-mirror.com
 $env:HF_ENDPOINT = "https://hf-mirror.com"
 ```
 
+Download with huggingface-cli:
 ```bash
 huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DFBench
 ```
