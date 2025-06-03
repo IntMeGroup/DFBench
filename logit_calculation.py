@@ -15,7 +15,7 @@ def combine_predictions():
         {"path": os.path.join(base_path, "resultsintern25.csv"), "suffix": "f2"},
         {"path": os.path.join(base_path, "resultsintern3.csv"), "suffix": "f3"}
     ]
-    output_file_path = os.path.join(base_path, "combined_final_predictionswjt.csv")
+    output_file_path = os.path.join(base_path, "combined_final_predictions.csv")
 
     dataframes = []
 
