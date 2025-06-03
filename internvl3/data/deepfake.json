@@ -1,0 +1,9 @@
+{
+    "sharegpt4v_instruct_gpt4-vision_cap100k": {
+      "root": "",
+      "annotation_train": "data/img_train_shuffled.jsonl",
+      "annotation_test": "data/img_test.jsonl",
+      "data_augment": false,
+      "repeat_time": 1
+    }
+}
