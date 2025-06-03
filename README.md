@@ -117,7 +117,7 @@ change merge_lora.sh line3 --adapters ./output_ckpt/your_weights
 sh merge_lora.sh 
 ```
 
-### 📈 Evaluate perception & correspondence scores
+### 📈 Evaluate & Real/Fake Prediction (with logit probabilities)
 
 ```bash
 python evaluate_logit.py --model_path ./output_ckpt/your_weights_merged
