@@ -92,6 +92,20 @@ git checkout v2.3.6
 python setup.py install
 ```
 
+Install `ms-swift` (pre-built):
+```bash
+pip install ms-swift -U
+```
+
+Or compile from source:
+```bash
+# pip install git+https://github.com/modelscope/ms-swift.git
+git clone https://github.com/modelscope/ms-swift.git
+cd ms-swift
+pip install -e .
+```
+
+
 Alternatively if you are cuda12 you can use the packed env from
 ```
 huggingface-cli download IntMeGroup/env swift.tar.gz --repo-type dataset --local-dir /home/user/anaconda3/envs
