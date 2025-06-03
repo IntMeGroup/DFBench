@@ -92,6 +92,12 @@ git checkout v2.3.6
 python setup.py install
 ```
 
+Alternatively if you are cuda12 you can use the packed env from
+```
+huggingface-cli download IntMeGroup/env swift.tar.gz --repo-type dataset --local-dir /home/user/anaconda3/envs
+mkdir -p /home/user/anaconda3/envs/swift
+tar -xzf swift.tar.gz -C /home/user/anaconda3/envs/swift
+```
 
 
 
