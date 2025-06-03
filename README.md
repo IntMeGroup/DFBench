@@ -148,6 +148,10 @@ python evaluate_logit.py --model_path ./output_ckpt/your_weights_merged
 
 ---
 ## 🔧 Preparation for InternVL2.5
+<div align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/930e6814-8a9f-43e1-a284-118a5732daa4">
+  <br>
+</div>
 
 ### 📁 Prepare dataset
 
