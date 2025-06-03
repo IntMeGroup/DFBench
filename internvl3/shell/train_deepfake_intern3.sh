@@ -28,8 +28,8 @@ torchrun \
   --conv_style "internlm2-chat" \
   --output_dir ${OUTPUT_DIR} \
   --meta_path "data/deepfake.json"\
-  --output_file "${OUTPUT_DIR}/qa_results.csv"\
-  --metrics_file "${OUTPUT_DIR}/qa_metrics.txt"\
+  --output_file "${OUTPUT_DIR}/resultsintern3.csv"\
+  --metrics_file "${OUTPUT_DIR}/Acc_metrics.txt"\
   --use_llm_lora 8\
   --use_backbone_lora 8\
   --overwrite_output_dir True \
