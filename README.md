@@ -56,6 +56,8 @@ huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DF
 
 ---
 
+
+
 ## ⚙️ Installation
 
 Clone the repository:
@@ -224,3 +226,27 @@ python process_results.py
 <p align="center">
   <img width="1000" alt="example" src="https://github.com/user-attachments/assets/e9e42d42-ca0a-420c-a01d-3bacdb699a3b" />
 </p>
+
+## 📌 TODO
+- ✅ Release the training code 
+- ✅ Release the evaluation code 
+- ✅ Release the DFBench Database
+
+## 📧 Contact
+If you have any inquiries, please don't hesitate to reach out via email at `wangjiarui@sjtu.edu.cn`
+
+
+## 🎓Citations
+
+If you find our work useful, please cite our paper as:
+```
+@misc{wang2025dfbenchbenchmarkingdeepfakeimage,
+      title={DFBench: Benchmarking Deepfake Image Detection Capability of Large Multimodal Models}, 
+      author={Jiarui Wang and Huiyu Duan and Juntong Wang and Ziheng Jia and Woo Yi Yang and Xiaorong Zhu and Yu Zhao and Jiaying Qian and Yuke Xing and Guangtao Zhai and Xiongkuo Min},
+      year={2025},
+      eprint={2506.03007},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.03007}, 
+}
+```
