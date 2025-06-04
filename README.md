@@ -7,8 +7,8 @@
 <div align="center">
 
    <div>
-      <!-- <a href="https://arxiv.org/abs/2504.08358"><img src="https://arxiv.org/abs/2504.08358"/></a> -->
-      <a href="https://arxiv.org/abs/2504.08358"><img src="https://img.shields.io/badge/Arxiv-2504.08358-red"/></a>
+      <!-- <a href="https://arxiv.org/abs/2506.03007"><img src="https://arxiv.org/abs/2506.03007"/></a> -->
+      <a href="https://arxiv.org/abs/2506.03007"><img src="https://img.shields.io/badge/Arxiv-2506.03007-red"/></a>
 <a href="https://huggingface.co/datasets/IntMeGroup/DFBench/tree/main">
    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-green" alt="Hugging Face Dataset Badge"/>
 </a>
