@@ -223,7 +223,17 @@ sh shell/eval_deepfake.sh
 python logit_calculation.py
 python process_results.py
 ```
+---
+# Feature Distribution and Plot
+<p align="center">
+  <img width="1000" alt="feature" src="https://github.com/user-attachments/assets/20fee5f6-995d-48d7-a8bb-c7ac2563b88f" />
+</p>
+Feature distribution of the DFBench. (a) Feature distribution of real images with no distortion. (b) Feature distribution of real images with distortions. (c) Feature distribution of AI-edited images. (d) Feature distribution of AI-generated images.
 
+```bash
+python feature_distribution.py
+python plot_features.py
+```
 # Zeo-Shot Model Comparison
 
 <p align="center">
