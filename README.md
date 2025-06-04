@@ -57,6 +57,7 @@ huggingface-cli download IntMeGroup/DFBench --repo-type dataset --local-dir ./DF
   <img width="1000" alt="example" src="https://github.com/user-attachments/assets/7136b1b0-db17-44a0-bf21-9cf409825b16" />
 </p>
 Overview of the MoA-DF architecture. Three LMMs are chosen as core detectors. Each model independently produces log-probabilities corresponding to the likelihood of the input image belonging to A (real) or B (fake). These log-probabilities are converted into normalized probabilities via the softmax function. The final decision is made based on the aggregation of these probabilities across all models.
+
 ---
 
 
@@ -240,6 +241,7 @@ python plot_features.py
   <img width="1000" alt="example" src="https://github.com/user-attachments/assets/e9e42d42-ca0a-420c-a01d-3bacdb699a3b" />
 </p>
 (a) Performance comparison of image generation models (b) Performance comparison of image detection models
+
 ---
 
 ## 📌 TODO
