@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>💡 DFBench: Benchmarking Deepfake Image Detection Capability of Large Multimodal Models</h1>
+<h1>💡 DFBench: Benchmarking Deepfake Image Detection Capability of Large Multimodal Models (ACM MM 2025)</h1>
 
 </div>
 
